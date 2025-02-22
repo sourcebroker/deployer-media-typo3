@@ -1,6 +1,6 @@
 <?php
 
-namespace SourceBroker\DeployerMediaTypo3;
+namespace SourceBroker\DeployerTypo3Media;
 
 use SourceBroker\DeployerLoader\Load;
 
@@ -12,7 +12,7 @@ class Loader
         new Load([
                 ['path' => 'vendor/sourcebroker/deployer-instance/deployer'],
                 ['path' => 'vendor/sourcebroker/deployer-extended-media/deployer'],
-                ['path' => 'vendor/sourcebroker/deployer-media-typo3/deployer'],
+                ['path' => 'vendor/sourcebroker/deployer-typo3-media/deployer'],
             ]
         );
     }

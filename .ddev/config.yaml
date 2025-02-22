@@ -1,4 +1,4 @@
-name: deployer-media-typo3
+name: deployer-typo3-media
 type: php
 docroot: ""
 php_version: "8.3"

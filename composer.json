@@ -1,5 +1,5 @@
 {
-  "name": "sourcebroker/deployer-media-typo3",
+  "name": "sourcebroker/deployer-typo3-media",
   "description": "Media sync for TYPO3 with deployer-extended-media.",
   "license": "MIT",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SourceBroker\\DeployerMediaTypo3\\": "src/"
+      "SourceBroker\\DeployerTypo3Media\\": "src/"
     }
   },
   "extra": {

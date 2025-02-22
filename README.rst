@@ -1,11 +1,11 @@
-deployer-media-typo3
-=====================
+deployer-typo3-media
+====================
 
-      .. image:: http://img.shields.io/packagist/v/sourcebroker/deployer-media-typo3.svg?style=flat
+      .. image:: http://img.shields.io/packagist/v/sourcebroker/deployer-typo3-media.svg?style=flat
          :target: https://packagist.org/packages/sourcebroker/deployer-extended-typo3
 
       .. image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
-         :target: https://packagist.org/packages/sourcebroker/deployer-media-typo3
+         :target: https://packagist.org/packages/sourcebroker/deployer-typo3-media
 
 .. contents:: :local:
 
@@ -21,14 +21,14 @@ Installation
 1) Install package with composer:
    ::
 
-      composer require sourcebroker/deployer-media-typo3
+      composer require sourcebroker/deployer-typo3-media
 
 
 2) Put following lines on the beginning of your deploy.php:
    ::
 
       require_once(__DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php');
-      new \SourceBroker\DeployerMediaTypo3\Loader();
+      new \SourceBroker\DeployerTypo3Media\Loader();
 
 
 Synchronizing media
@@ -62,18 +62,18 @@ This is example of working configuration for TYPO3 13.
 
   require_once(__DIR__ . '/vendor/sourcebroker/deployer-loader/autoload.php');
 
-  new \SourceBroker\DeployerMediaTypo3\Loader();
+  new \SourceBroker\DeployerTypo3Media\Loader();
 
   host('production')
       ->setHostname('vm-dev.example.com')
       ->setRemoteUser('deploy')
-      ->set('bin/php', '/home/www/t3base11-public/production/.bin/php');
+      ->set('bin/php', '/home/www/t3base13/production/.bin/php');
       ->set('deploy_path', '/home/www/t3base13/production');
 
   host('staging')
-      ->setHostname('vm-staging.example.com')
+      ->setHostname('vm-dev.example.com')
       ->setRemoteUser('deploy')
-      ->set('bin/php', '/home/www/t3base11-public/staging/.bin/php');
+      ->set('bin/php', '/home/www/t3base13/staging/.bin/php');
       ->set('deploy_path', '/home/www/t3base13/staging');
 
   localhost('local')
@@ -85,7 +85,7 @@ This is example of working configuration for TYPO3 13.
 Changelog
 ---------
 
-See https://github.com/sourcebroker/deployer-media-typo3/blob/master/CHANGELOG.rst
+See https://github.com/sourcebroker/deployer-typo3-media/blob/master/CHANGELOG.rst
 
 
 .. _sourcebroker/deployer-extended-media: https://github.com/sourcebroker/deployer-extended-media
